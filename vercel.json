@@ -1,0 +1,23 @@
+{
+  "buildCommand": "echo 'No build step'",
+  "outputDirectory": ".",
+  "framework": "static",
+  "regions": ["iad1"],
+  "env": {},
+  "functions": {
+    "**.html": {
+      "maxDuration": 60
+    }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=3600, s-maxage=3600"
+        }
+      ]
+    }
+  ]
+}

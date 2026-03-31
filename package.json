@@ -1,0 +1,24 @@
+{
+  "name": "obskira-runway-deck",
+  "version": "1.0.0",
+  "description": "OBSKIRA RUNWAY — Investor Brief. A luxury fashion brand investor presentation deck.",
+  "author": "OBSKIRA RUNWAY",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "npx http-server . -p 8000 -c-1",
+    "start": "npx http-server . -p 8000 -c-1",
+    "build": "echo 'No build step required for static site'",
+    "deploy": "git push origin main"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
+  "keywords": [
+    "fashion",
+    "investor-deck",
+    "luxury-brand",
+    "obskira",
+    "runway"
+  ]
+}
