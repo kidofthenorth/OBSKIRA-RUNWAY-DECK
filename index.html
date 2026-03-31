@@ -120,7 +120,9 @@
 
   /* Image placeholders */
   .img-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 28px; }
+  .img-placeholder { display: flex; flex-direction: column; }
   .img-box { width: 100%; aspect-ratio: 3/4; border: 1px dashed rgba(232,232,227,0.12); background: rgba(255,255,255,0.02); display: flex; align-items: center; justify-content: center; font-size: 11px; color: rgba(232,232,227,0.2); letter-spacing: 1px; text-align: center; padding: 12px; }
+  .img-grid img { width: 100%; height: auto; aspect-ratio: 3/4; object-fit: cover; display: block; }
   .img-caption { font-size: 11px; color: rgba(232,232,227,0.35); letter-spacing: 1px; margin-top: 8px; text-align: center; }
 
   /* The Ask */
@@ -326,7 +328,17 @@
         USD 10,000 already committed — first 3 pieces in production. See below.
       </div>
 
-      <!-- IMAGE PLACEHOLDERS: FIRST 3 PIECES -->
+      <!-- ═══════════════════════════════════════════════════════════════════════════════
+           IMAGE PLACEHOLDERS: FIRST 3 PIECES
+           
+           INSTRUCTIONS: Replace each placeholder with an <img> tag.
+           Supported formats: .jpg, .png | Size: 300–500 KB | Aspect ratio: 3:4
+           
+           EXAMPLE HTML REPLACEMENT:
+           <div><img src="images/piece-1.jpg" alt="OBSKIRA Piece 1" style="width:100%; aspect-ratio:3/4; object-fit:cover;"><p class="img-caption">Piece 01 — Title</p></div>
+           
+           See /images/README.md for detailed instructions.
+           ═══════════════════════════════════════════════════════════════════════════════ -->
       <div class="img-grid">
         <div class="img-placeholder">
           <div class="img-box">[ Insert photo — Piece 1 ]</div>
